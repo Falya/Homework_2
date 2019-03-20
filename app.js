@@ -62,10 +62,12 @@
 			e.preventDefault();
 			let value = e.target.value;
 
-			if (value) {
+			if (value && (this.tagsArr.indexOf(value) === -1)) {
 				this.tagsArr.push(value);
 				e.target.value = '';
 				createTags(this);
+			} else {
+				e.target.value = '';
 			}
 		}
 	}
@@ -96,4 +98,6 @@
 
 	let tagField = createTagsField();
 	document.body.append(tagField.element);
+	let tagFieldd = createTagsField();
+	document.body.append(tagFieldd.element);
 }());
