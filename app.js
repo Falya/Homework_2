@@ -98,6 +98,4 @@
 
 	let tagField = createTagsField();
 	document.body.append(tagField.element);
-	let tagFieldd = createTagsField();
-	document.body.append(tagFieldd.element);
 }());
