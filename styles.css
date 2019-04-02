@@ -31,6 +31,10 @@ body {
 
 }
 
+.container .tag::after {
+content: attr(data-value);
+}
+
 .tag:hover {
     background: rgba(147,39,143,1);
 }
